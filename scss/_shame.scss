@@ -1,0 +1,13 @@
+/*
+    Shame
+    ---
+    Hacks and quick fixes
+*/
+
+.u-flip {
+    @include mq(bp3) {
+        transform: scaleX(-1);
+        filter: Flip;
+        -ms-filter: 'Flip';
+    }
+}

@@ -1,0 +1,92 @@
+/*
+    Components: Brand
+    ---
+    Brand image/logo
+*/
+
+/**
+ *  1. Needs to be the width of the logo you are using.
+ *  2. Logo is set as background-image.
+ *     Text-indent is set to prevent text from showing on top of the background-image.
+ */
+
+.c-logo {
+    display: block;
+    width: 28px;
+    height: 20px;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url('../img/svg/3s.svg');
+    background-size: contain;
+    text-indent: -99999px;
+    @include margin-bottom(1.5);
+    @include margin-left(1.5);
+    margin-top: 28px;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    float: left;
+    color: rgba(palette(color-neutral,x-dark),1);
+    line-height: 1.2em;
+    font-size: #{$ms-1}px;
+    letter-spacing: .05rem;
+
+    @include mq(bp3) {
+        height: 28px;
+        position: relative;
+        @include margin-left(2);
+    }
+
+    .c-body-detail & {
+        transition-property: all !important;
+        transition-duration: .1s !important;
+        transition-timing-function: linear !important;
+
+        &:hover {
+            background-image: url('../img/svg/3s-open.svg');
+            transition: all .1s linear;
+        }
+    }
+}
+
+.c-logo--text {
+    width: 200px;
+    overflow: hidden;
+
+    &:before {
+        content: 'Dries Standaert';
+        text-indent: 0;
+        height: 24px;
+        font-weight: $beta-font-weight;
+        line-height: 1rem;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 30px;
+    }
+
+    @include mq(bp3) {
+        width: 280px;
+        text-indent: 0;
+        @include margin-top(1.3);
+        @include margin-bottom(1.7);
+        @include margin-left(2);
+        padding-left: 35px;
+        padding-top: 7px;
+
+        &:before {
+            content: '';
+            text-indent: 0;
+            height: 0;
+            width: 0;
+            display: block;
+            margin-left: 0;
+            margin-top: 0;
+        }
+    }
+}
+
+    .c-logo__link {
+        display: block;
+        height: 100%;
+    }

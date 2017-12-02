@@ -1,0 +1,16 @@
+{% if page.div != 'home' %}
+    <p class="c-logo" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="300">
+        <a href="/" class="c-logo__link">
+{% else %}
+    <p class="c-logo c-logo--text" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="600">
+{% endif %}
+
+    <span>Hello,</span>
+    my name is <span class="c-sound js-sound">Dries</span>
+
+{% if page.div != 'home' %}
+        </a>
+    </p>
+{% else %}
+    </p>
+{% endif %}

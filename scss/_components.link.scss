@@ -1,0 +1,26 @@
+/*
+    Components: link
+    ---
+*/
+
+.c-link {
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -.1rem;
+        height: 1px;
+        border-bottom: 1px solid rgba(palette(color-neutral,base),.3);
+        transition: border-bottom .3s ease-in-out;
+    }
+
+    &:hover {
+        &:after {
+            border-bottom: 1px solid rgba(palette(color-neutral,base),1);
+        }
+    }
+}

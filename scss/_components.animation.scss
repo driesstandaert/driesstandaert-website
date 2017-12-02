@@ -1,0 +1,150 @@
+/*
+    Components: animations
+    ---
+*/
+///////////////////////
+// ANIMATION PAPERSTACK
+///////////////////////
+
+.c-scatter__animation {
+    width: 260px;
+    height: 300px;
+    position: relative;
+    margin: 4rem auto;
+
+    img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 260px;
+    }
+
+    @include mq(bp3) {
+        width: 320px;
+        height: 380px;
+
+        img {
+            width: 320px;
+        }
+    }
+}
+
+.c-paperstack {
+    background-image: url('../img/svg/paper-stack.svg');
+    width: 60px;
+    height: 114px;
+    position: absolute;
+    top: 95px;
+    right: 0;
+    z-index: 1000;
+
+    @include mq(bp3) {
+        width: 70px;
+        height: 102px;
+        top: 166px;
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes wobble {
+    0% {
+        transform: none;
+    }
+
+    15% {
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    30% {
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+
+    45% {
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    60% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+
+    75% {
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.wobble {
+    animation-name: wobble;
+}
+
+
+///////////////////////
+// ANIMATION PAPERSHEET
+///////////////////////
+
+.c-papersheet-wrapper {
+    position: absolute;
+    bottom: 250px;
+    right: 50%;
+
+    width: 200px;
+    height: 300px;
+
+    pointer-events: none;
+}
+
+.c-papersheet {
+    width: 80px;
+    height: 80px;
+    background-image: url('../img/svg/paper-sheet.svg');
+    background-repeat: no-repeat;
+    outline: none !important;
+    display: block;
+    position: absolute;
+}
+
+.c-papersheet2 {
+    background-image: url('../img/svg/paper-sheet2.svg');
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(0, 0) rotate3d(0, 0, 1, 0deg);
+    }
+
+    70% {
+        transform: translate(0, 250px) rotate3d(0, 0, 1, 90deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate3d(0, 0, 1, 0deg);
+    }
+}
+
+.bounce {
+    animation: bounce 6s ease infinite;
+    float: right;
+    left: 25%;
+    top: 40%;
+}
+
+.bounce2 {
+    animation: bounce 9s ease infinite;
+    left: 75%;
+    top: 50%;
+}
+
+.bounce3 {
+    animation: bounce 11s ease infinite;
+    left: 120%;
+    top: 30%;
+    width: 70px;
+    height: 70px;
+}

@@ -1,0 +1,12 @@
+/*
+    Components: divider
+    ---
+*/
+
+.c-divider {
+    margin-left: 1em;
+
+    @include mq(bp3) {
+        margin-left: 2em;
+    }
+}

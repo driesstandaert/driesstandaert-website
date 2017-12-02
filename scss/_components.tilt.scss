@@ -1,0 +1,27 @@
+/*
+    Components: tilt
+    ---
+*/
+
+.c-tilt {
+    position: relative;
+    min-height: 400px;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.c-tilt__img {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

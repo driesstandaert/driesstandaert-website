@@ -1,0 +1,21 @@
+/*
+    Components: sound
+    ---
+*/
+
+.c-sound {
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 0;
+    transition: all .3s ease-in-out;
+    background-image: url('/img/svg/icon-audio.svg');
+    font-weight: $beta-font-weight;
+
+    &:hover {
+        cursor: pointer;
+        background-size: 16px;
+        color: rgba(palette(color-neutral,x-dark),1);
+        transition: all .3s ease-in-out;
+        padding-left: 1.4rem;
+    }
+}

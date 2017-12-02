@@ -1,0 +1,19 @@
+/*
+    Components: main
+    ---
+*/
+
+main {
+    //overflow-x: hidden;
+    background-color: palette(color-neutral,x-light);
+}
+
+header {
+    position: absolute;
+    z-index: 1020;
+    width: 100%;
+
+    @include mq(bp4) {
+        margin-top: 2rem;
+    }
+}

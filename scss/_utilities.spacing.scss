@@ -1,0 +1,64 @@
+/*
+    Utilities: Spacing
+    ---
+    Utility classes for spacing
+*/
+
+// Loop through the increments map and get the value.
+@each $increment, $value in $increments {
+
+    // Increment utility class (e.g. .u-m-alpha)
+    .u-m-#{$increment} {
+        @include margin-tb($value);
+        @include margin-lr($value);
+    }
+
+    // Increment utility class (e.g. .u-mt-alpha)
+    .u-mt-#{$increment} {
+        @include margin-top($value);
+    }
+
+    // Increment utility class (e.g. .u-mb-alpha)
+    .u-mb-#{$increment} {
+        @include margin-bottom($value);
+    }
+
+    // Increment utility class (e.g. .u-p-alpha)
+    .u-p-#{$increment} {
+        @include padding-tb($value);
+        @include padding-lr($value);
+    }
+
+    // Increment utility class (e.g. .u-pt-alpha)
+    .u-pt-#{$increment} {
+        @include padding-top($value);
+    }
+
+    // Increment utility class (e.g. .u-pb-alpha)
+    .u-pb-#{$increment} {
+        @include padding-bottom($value);
+    }
+
+    // Increment utility class (e.g. .u-pl-alpha)
+    .u-pl-#{$increment} {
+        @include padding-left($value);
+    }
+
+    // Increment utility class (e.g. .u-pr-alpha)
+    .u-pr-#{$increment} {
+        @include padding-right($value);
+    }
+
+    // Increment utility class (e.g. .u-mb-alpha-bp3)
+    .u-mb-#{$increment}-bp3 {
+        @include mq(bp3) {
+            @include margin-bottom($value);
+        }
+    }
+
+    .u-mr-#{$increment}-bp3 {
+        @include mq(bp3) {
+            @include margin-right($value);
+        }
+    }
+}

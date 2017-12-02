@@ -1,0 +1,152 @@
+/*
+    Components: Tile
+    ---
+*/
+
+.c-tile {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.c-tile--link {
+    background-color: palette(color-neutral,x-light);
+    text-decoration: none;
+    transition: all .3s ease-out;
+    font-weight: $beta-font-weight;
+
+    &:hover,
+    &:active,
+    &:focus {
+        transition: all .3s ease-out;
+        background-color: palette(color-neutral,x-dark);
+        color: palette(color-neutral,x-light);
+        text-decoration: none;
+        font-weight: $beta-font-weight;
+    }
+}
+
+    .c-tile__link-text {
+        margin-bottom: 0;
+        background-size: 16px;
+        background-repeat: no-repeat;
+
+        > span {
+            display: block;
+        }
+    }
+
+        .c-tile__link-text--prev {
+            background-image: url('/img/svg/icon-arrow-left.svg');
+            background-position: left center;
+            padding-left: 28px;
+
+            .c-tile--link:hover & {
+                background-image: url('/img/svg/icon-arrow-left-white.svg');
+            }
+        }
+
+        .c-tile__link-text--next {
+            text-align: right;
+            background-image: url('/img/svg/icon-arrow-right.svg');
+            background-position: right center;
+            padding-right: 28px;
+
+            .c-tile--link:hover & {
+                background-image: url('/img/svg/icon-arrow-right-white.svg');
+            }
+        }
+
+        .c-tile__link-text--home {
+            text-align: right;
+            background-image: url('/img/svg/icon-home.svg');
+            background-position: right center;
+            padding-right: 28px;
+        }
+
+        .c-tile__link-text--work {
+            text-align: right;
+            background-image: url('/img/svg/icon-work.svg');
+            background-position: right center;
+            padding-right: 28px;
+
+            .c-tile--link:hover & {
+                background-image: url('/img/svg/icon-work-white.svg');
+            }
+        }
+
+
+    .c-tile__content {
+        @include padding-tb(4,3);
+        @include padding-lr(1.5,1.5);
+        width: 100%;
+
+        @include mq(bp3) {
+            @include padding-lr(2,2);
+        }
+
+        @include mq(bp4) {
+            @include padding-lr(4,4);
+        }
+
+        @include mq(bp5) {
+            @include padding-tb(7,6);
+            @include padding-lr(7,7);
+        }
+    }
+
+    .c-tile__content--img {
+        text-align: center;
+        @include padding-tb(1.5,1.5);
+
+        @include mq(bp3) {
+            @include padding-tb(3,3);
+        }
+
+        @include mq(bp4) {
+            @include padding-tb(4,4);
+            padding-right: 0;
+        }
+
+        @include mq(bp5) {
+            @include padding-tb(7,7);
+        }
+    }
+
+    .c-tile__content--full {
+        @include padding-lr(1.5,1.5);
+        @include padding-tb(1.5,1.5);
+
+        @include mq(bp3) {
+            @include padding-lr(2,2);
+            @include padding-tb(2,2);
+        }
+
+        @include mq(bp4) {
+            @include padding-tb(4,4);
+            @include padding-lr(0,0);
+        }
+
+        @include mq(bp5) {
+            @include padding-tb(7,7);
+        }
+    }
+
+    .c-tile__content--link {
+        @include padding-tb(4,4);
+    }
+
+.c-tile__labels {
+    @include padding-bottom(2);
+    position: relative;
+
+    &:after {
+        content: '';
+        background-color: palette(color-alpha,base);
+        width: 60px;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}

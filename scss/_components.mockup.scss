@@ -1,0 +1,78 @@
+/*
+    Components: mockup
+    ---
+*/
+
+.c-mockup {
+    position: relative;
+}
+
+.c-mockup-mobile {
+    width: 90%;
+    max-width: 450px;
+    margin: 100px auto 50px -340px;
+    position: relative;
+    margin-bottom: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform-origin: center top;
+    transform: rotateX(-60deg) rotateZ(-40deg) translateX(50px) translateY(300px) translateZ(0);
+    transition: transform .6s;
+}
+
+.c-mockup-mobile--1 {
+    z-index: 30;
+    top: 70px;
+    left: 0;
+    transition: all .4s ease-in-out;
+
+    .c-mockup:hover &,
+    &.is-open {
+        top: -20px;
+        transition: all .4s ease-in-out;
+    }
+
+    &.is-open:hover {
+        left: -60px;
+        transition: all .4s ease-in-out;
+    }
+}
+
+.c-mockup-mobile--2 {
+    z-index: 20;
+    top: -20px;
+    left: 0;
+    position: absolute;
+    transition: all .4s ease-in-out;
+
+    .c-mockup:hover &,
+    &.is-open {
+        top: 30px;
+        transition: all .4s ease-in-out;
+    }
+
+    &.is-open:hover {
+        left: -60px;
+        transition: all .4s ease-in-out;
+    }
+}
+
+.c-mockup-mobile--3 {
+    z-index: 10;
+    top: 64px;
+    left: 0;
+    position: absolute;
+    transition: all .4s ease-in-out;
+
+    .c-mockup:hover &,
+    &.is-open {
+        top: 180px;
+        transition: all .4s ease-in-out;
+    }
+
+    &.is-open:hover {
+        left: -60px;
+        transition: all .4s ease-in-out;
+    }
+}

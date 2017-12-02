@@ -1,0 +1,49 @@
+/*
+    Components: browser
+    ---
+*/
+
+.c-browser {
+    &:before {
+        content: '';
+        display: block;
+        padding-top: 4%;
+        background: url('/img/png/browser.png') no-repeat;
+        background-size: cover;
+        background-position: top left;
+    }
+}
+
+.c-browser--white {
+    &:before {
+        content: '';
+        display: block;
+        padding-top: 4%;
+        background: url('/img/png/browser-white.png') no-repeat;
+        background-size: cover;
+        background-position: top left;
+    }
+}
+
+.c-browser__content {
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        padding-top: 56.3%;
+    }
+
+    > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: visible;
+    }
+}
+
+.c-browser__content--scrollable > div {
+    overflow: auto;
+}

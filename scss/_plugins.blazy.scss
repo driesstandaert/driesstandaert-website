@@ -1,0 +1,16 @@
+/*
+    Plugin: blazy
+    ---
+    Blazy images: http://dinbror.dk/blog/blazy/
+*/
+
+.p-blazy {
+    opacity: .2;
+    will-change: transform, opacity;
+    transition: all .5s;
+    position: relative;
+}
+
+.p-blazy--loaded {
+    opacity: 1;
+}

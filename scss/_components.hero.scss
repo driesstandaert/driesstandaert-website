@@ -1,0 +1,22 @@
+/*
+    Components: intro
+    ---
+*/
+
+.c-hero {
+    //text-align: center;
+    @include padding-lr(1.5,1.5);
+
+    @include mq(bp3) {
+        @include padding-lr(2,0);
+    }
+
+    > h1 {
+        margin-bottom: 2rem;
+    }
+
+    > h2 {
+        font-size: 1.4rem;
+    }
+
+}

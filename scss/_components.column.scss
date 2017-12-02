@@ -1,0 +1,18 @@
+/*
+    Components: Column
+    ---
+*/
+
+.c-column {
+    @include mq(bp4) {
+        //padding-left: 70px;
+        column-count: 2;
+        column-gap: 2rem;
+    }
+
+    strong {
+        background-color: palette(color-alpha,base);
+        color: palette(color-neutral,x-light);
+        @include padding-lr(.5,.5);
+    }
+}

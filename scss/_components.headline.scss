@@ -1,0 +1,51 @@
+/*
+    Components: headline
+    ---
+*/
+
+.c-headline__title {
+    position: absolute;
+    width: calc(100% - 2rem);
+    top: -27px;
+
+    > h3 {
+        background-color: palette(color-alpha,base);
+        letter-spacing: .05em;
+        font-size: 16px;
+        color: white;
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        text-transform: uppercase;
+
+        .c-row-identity & {
+            background-color: palette(color-beta,base);
+        }
+
+        .c-row-illustration & {
+            background-color: palette(color-gamma,base);
+        }
+    }
+}
+
+    .c-headline__text {
+        text-align: left;
+
+        @include mq(bp3) {
+            text-align: center;
+        }
+    }
+
+    .c-headline__meta {
+        color: palette(color-neutral,base);
+        margin-bottom: .5rem;
+
+        > span {
+            margin-left: .5rem;
+            margin-right: .5rem;
+        }
+    }
+
+    .c-headline__link {
+        text-decoration: none;
+        font-weight: $beta-font-weight;
+    }
