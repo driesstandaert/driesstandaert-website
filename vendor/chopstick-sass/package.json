@@ -1,0 +1,55 @@
+{
+  "name": "chopstick-sass",
+  "description": "The Chopstick Sass framework",
+  "keywords": [
+    "front-end",
+    "utilities",
+    "css",
+    "scss",
+    "sass",
+    "framework",
+    "ITCSS"
+  ],
+  "version": "1.0.1",
+  "author": {
+    "name": "Chopstick",
+    "url": "https://github.com/orgs/getchopstick/people"
+  },
+  "homepage": "http://getchopstick.com/",
+  "bugs": {
+    "url": "https://github.com/getchopstick/chopstick-sass/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/getchopstick/chopstick-sass.git"
+  },
+  "gitHead": "70394c7e3caaf9778d0a5df2abf4fdb40c3760a8",
+  "_id": "chopstick-sass@1.0.1",
+  "scripts": {},
+  "_shasum": "710399ae6ed5598d152a94a028e8f19c5996deed",
+  "_from": "chopstick-sass@>=1.0.1 <2.0.0",
+  "_npmVersion": "3.10.3",
+  "_nodeVersion": "6.6.0",
+  "_npmUser": {
+    "name": "chopstick",
+    "email": "dieter.peirs@wijs.be"
+  },
+  "dist": {
+    "shasum": "710399ae6ed5598d152a94a028e8f19c5996deed",
+    "tarball": "https://registry.npmjs.org/chopstick-sass/-/chopstick-sass-1.0.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "chopstick",
+      "email": "dieter.peirs@wijs.be"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/chopstick-sass-1.0.1.tgz_1476871968009_0.39068390103057027"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/chopstick-sass/-/chopstick-sass-1.0.1.tgz",
+  "readme": "ERROR: No README data found!"
+}

@@ -1,0 +1,94 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "svgxuse@1.2.4",
+        "scope": null,
+        "escapedName": "svgxuse",
+        "name": "svgxuse",
+        "rawSpec": "1.2.4",
+        "spec": "1.2.4",
+        "type": "version"
+      },
+      "/Users/dries/Sites/driesstandaert-full"
+    ]
+  ],
+  "_from": "svgxuse@1.2.4",
+  "_id": "svgxuse@1.2.4",
+  "_inCache": true,
+  "_location": "/svgxuse",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/svgxuse-1.2.4.tgz_1491393784795_0.6269978319760412"
+  },
+  "_npmUser": {
+    "name": "keyamoon",
+    "email": "keyamoon@gmail.com"
+  },
+  "_npmVersion": "4.0.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "svgxuse@1.2.4",
+    "scope": null,
+    "escapedName": "svgxuse",
+    "name": "svgxuse",
+    "rawSpec": "1.2.4",
+    "spec": "1.2.4",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/svgxuse/-/svgxuse-1.2.4.tgz",
+  "_shasum": "bb5eb73ae23c18c32288f47e6a7136e3818c548b",
+  "_shrinkwrap": null,
+  "_spec": "svgxuse@1.2.4",
+  "_where": "/Users/dries/Sites/driesstandaert-full",
+  "author": {
+    "name": "Keyamoon"
+  },
+  "bugs": {
+    "url": "https://github.com/Keyamoon/svgxuse/issues"
+  },
+  "dependencies": {},
+  "description": "A polyfill that fetches external SVGs referenced in use elements when the browser itself fails to do so.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "bb5eb73ae23c18c32288f47e6a7136e3818c548b",
+    "tarball": "https://registry.npmjs.org/svgxuse/-/svgxuse-1.2.4.tgz"
+  },
+  "files": [
+    "svgxuse.js",
+    "svgxuse.min.js"
+  ],
+  "gitHead": "bb4a2ed5b504a66c6a16803f0b714e8c6a1e9f0d",
+  "homepage": "https://github.com/Keyamoon/svgxuse#readme",
+  "keywords": [
+    "svg",
+    "inline",
+    "svg",
+    "xlink:href",
+    "polyfill",
+    "external"
+  ],
+  "license": "MIT",
+  "main": "svgxuse.js",
+  "maintainers": [
+    {
+      "name": "keyamoon",
+      "email": "keyamoon@gmail.com"
+    }
+  ],
+  "name": "svgxuse",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keyamoon/svgxuse.git"
+  },
+  "scripts": {},
+  "version": "1.2.4"
+}
